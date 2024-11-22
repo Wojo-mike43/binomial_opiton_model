@@ -1,6 +1,6 @@
 # Binomial Option Pricing Model
 
-This project implements a **Binomial Options Pricing Model** in Python. The model uses a custom binary tree data structure to calculate the fair value of European-style call or put options through reverse induction.
+This project implements a Binomial Options Pricing Model in Python. The model uses a custom binary tree data structure to calculate the fair value of European-style call or put options through reverse induction.
 
 ## How It Works
 
