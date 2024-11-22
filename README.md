@@ -4,7 +4,7 @@ This project implements a **Binomial Options Pricing Model** in Python. The mode
 
 ## How It Works
 
-The binomial model represents potential future price movements of the underlying stock as a tree structure, where each node corresponds to a possible stock price at a given time step. The model calculates option prices by traversing the tree backward, applying risk-neutral probabilities to discount future payoffs to their present value.
+A binomial model represents potential future price movements of the underlying stock as a tree structure, where each node corresponds to a possible stock price at a given time step. The model calculates option prices through reverse induction and applying risk-neutral probabilities to discount future payoffs to their present value.
 
 ### Key Features
 
@@ -13,17 +13,16 @@ The binomial model represents potential future price movements of the underlying
 - **Flexible Input Options:** Users can specify key parameters such as the stock price, strike price, option type, number of steps, risk-free rate, and up/down movements.
 - **Dynamic Payoff Calculation:** Supports call and put options with automatic payoff evaluation.
 
-## Usage
+## Inputs
 
-To use this script, run it in a Python environment. The program will prompt for the following inputs:
-
-1. **Stock Price (`s0`)**: The current price of the stock.
-2. **Strike Price (`k`)**: The strike price of the option.
-3. **Option Type (`o_type`)**: Input either "call" or "put."
-4. **Number of Steps (`steps`)**: The number of steps in the binomial tree.
-5. **Risk-Free Rate (`risk_free`)**: The annualized risk-free rate as a percentage (e.g., enter 5 for 5%).
-6. **Stock Up Move (`up_move`)**: The percentage increase in stock price for an upward move.
-7. **Stock Down Move (`down_move`)**: The percentage decrease in stock price for a downward move.
+The user is prompted for several inputs. These include:
+- Initial stock price
+- Option strike price
+- Option type (call or put)
+- Number of steps (periods) in the binomial tree
+- Risk-free interest rate
+- Up-move (the amount that the stock price will increase on an up-step of the tree)
+- Down-move (the amount that the stock price will decrease on a down-step of the tree) 
 
 ### Example
 
